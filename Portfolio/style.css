@@ -192,62 +192,27 @@ span{
 
 /*pictures*/
 
-.portimg1{
-position: absolute;
-top: 1300px;
-right: 10px;
-height: 450px;
-width: 300px;
-}
-
-.portimg2{
-  position: absolute;
-  top: 1300px;
-  right: 360px;
+.portimg{
+  float: left;
+  right: 10px;
   height: 450px;
   width: 300px;
-  }
-
-  .portimg3{
-    top: 1300px;
-    position: absolute;
-    right: 720px;
-    height: 450px;
-    width: 300px;
-    }
-
-    .portimg4{
-      top: 1300px;
-      position: absolute;
-      right: 1020px;
-      height: 450px;
-      width: 300px;
-      }
+}
 
 
-.animal1{
-  top: 1800px;
-  position: absolute;
+.animal{
+ float: left;
   right: 10px;
   height: 500px;
   width: 350px;
 }
+.animal1{
+  float: left;
+   right: 10px;
+   height: 500px;
+   width: 900px;
+ }
 
-.animal2{
-  top: 1800px;
-  position: absolute;
-  right: 500px;
-  height: 350px;
-  width: 800px;
-}
-
-.animal3{
-  top: 2200px;
-  position: absolute;
-  right: 500px;
-  height: 350;
-  width: 800px;
-}
 
 
 /* Contact site TOP Text Part  */
@@ -340,7 +305,12 @@ width: 30px;
 	margin-bottom: 20px;
 }
 
-/*portfolio footer*/
+/*footer*/
+
+.gh{
+  display: flex;
+  margin-left: -300px;
+}
 
 .footer{
 margin-top: 150px;
@@ -353,6 +323,17 @@ display: flex;
 
 .footer div{
 text-align: center;
+}
+
+.col-3{
+  flex: 1;
+}
+
+.col-3{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .col-1 a{
