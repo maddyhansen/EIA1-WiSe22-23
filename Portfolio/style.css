@@ -79,7 +79,7 @@ span{
 }
 
 .detel a:hover{ 
-    color:blue
+      color:rgb(44, 184, 98)
 }
 
 /*Bild im Top-Bereich*/
@@ -189,15 +189,182 @@ span{
 	font-size: 18px;
 	margin-bottom: 45px;
 }
+
 /*pictures*/
 
 .portimg1{
 position: absolute;
-right: 15px;
-height: 500;
-width: 300;
+top: 1300px;
+right: 10px;
+height: 450px;
+width: 300px;
+}
+
+.portimg2{
+  position: absolute;
+  top: 1300px;
+  right: 360px;
+  height: 450px;
+  width: 300px;
+  }
+
+  .portimg3{
+    top: 1300px;
+    position: absolute;
+    right: 720px;
+    height: 450px;
+    width: 300px;
+    }
+
+    .portimg4{
+      top: 1300px;
+      position: absolute;
+      right: 1020px;
+      height: 450px;
+      width: 300px;
+      }
+
+
+.animal1{
+  top: 1800px;
+  position: absolute;
+  right: 10px;
+  height: 500px;
+  width: 350px;
+}
+
+.animal2{
+  top: 1800px;
+  position: absolute;
+  right: 500px;
+  height: 350px;
+  width: 800px;
+}
+
+.animal3{
+  top: 2200px;
+  position: absolute;
+  right: 500px;
+  height: 350;
+  width: 800px;
 }
 
 
-/* Portfolio Illustration and Posters */
+/* Contact site TOP Text Part  */
+.about2{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #ffffff;
+}
 
+.about2-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about2-text h2{
+	color: rgb(0, 0, 0);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about2-text h5{
+	color: rgb(0, 0, 0);
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about2-text p{
+	color: rgb(0, 0, 0, 0.8);
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+/*Formular to contact me*/
+
+/*Sheet*/
+input[type=text], select, textarea{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid rgb(41, 198, 138); 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Submit button */
+input[type=submit] {
+  background-color: #008a57;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* hover for the button*/
+input[type=submit]:hover {
+  background-color: #206d24;
+}
+
+/* background */
+.container {
+  border-radius: 5px;
+  background-color: #97ea79;
+  padding: 20px;
+}
+
+/*Social Media*/
+
+.logoinsta{
+height: 30px;
+width: 30px;
+}
+
+.about2-text h2{
+	color: rgb(0, 0, 0);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+/*portfolio footer*/
+
+.footer{
+margin-top: 150px;
+width: 100%;
+padding: 100px 15%;
+background: #206d24;
+color: #000000;
+display: flex;
+}
+
+.footer div{
+text-align: center;
+}
+
+.col-1 a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer div h3{
+font-weight: bold;
+margin-bottom: 30px;
+letter-spacing: 1px;
+color: #ffffff;
+}
