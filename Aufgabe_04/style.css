@@ -257,6 +257,7 @@ span{
 
 /*Formular to contact me*/
 
+
 /*Sheet*/
 input[type=text], select, textarea{
   width: 100%; 
@@ -311,7 +312,6 @@ width: 30px;
   display: flex;
   margin-left: -300px;
 }
-
 .footer{
 margin-top: 150px;
 width: 100%;
@@ -322,30 +322,28 @@ display: flex;
 }
 
 .footer div{
-text-align: center;
-}
-
-.col-3{
-  flex: 1;
-}
-
-.col-3{
-  display: block;
-  text-decoration: none;
+  text-align: center;
+  flex-grow: 2px;
+  }
+  
+  .col-3{
+    flex-grow: 2;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    right: 50px;
+  }
+  
+  .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .footer div h3{
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
   color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.col-1 a{
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.footer div h3{
-font-weight: bold;
-margin-bottom: 30px;
-letter-spacing: 1px;
-color: #ffffff;
-}
+  }
