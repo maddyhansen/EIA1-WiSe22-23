@@ -1,0 +1,23 @@
+.slider{
+    width: 500px;
+    height: 950px;
+    background: url(Fotos/foto14);
+}
+
+@keyframes slide{
+    25%{
+        background: url(Fotos/foto14);
+    }
+
+    50%{
+        background: url(Fotos/foto13);
+    }
+
+    75%{
+        background: url(Fotos/foto12);
+    }
+
+    100%{
+        background: url(Fotos/foto11);
+    }
+}

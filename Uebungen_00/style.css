@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #87A96B;
+}
+
+
+/*how big is the slideshow*/
+.slidershow{
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+/*navigation bar*/
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    transform: translateX(-50%,);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 6px; 
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #87A96B;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+/*pictures sliding*/
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* pictures with bar*/
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
