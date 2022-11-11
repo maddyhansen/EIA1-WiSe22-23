@@ -397,12 +397,11 @@ display: flex;
   }
 /*slideshow*/
 #slideshow{
+  position: fixed;
   margin: 5px;
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
-  height: 950px;
-  width: 650px;
 }
 
 @keyframes example {
