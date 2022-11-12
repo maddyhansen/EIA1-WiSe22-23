@@ -426,10 +426,10 @@ display: flex;
   }
 
   75%{
-    background-image: url("./Fotos/foto1.JPG");
+    background-image: url("./Fotos/foto14.JPG");
   }
   100%{
-    background-image: url("./Fotos/foto2.JPG");
+    background-image: url("./Fotos/foto15.jpg");
   }
   
 }
