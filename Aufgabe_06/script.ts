@@ -25,7 +25,7 @@ console.log ("Einwohnerzahl Italiens im Jahr 2022 in Millionen" + " " + ita_2022
 let swe_2022 = 10.45;
 let swe_2008 = 9.236;
 let eu_all = 447.7;
-let swe_perc_to_eu = 100 / eu_all * ita_2022;
+let swe_perc_to_eu = 100 / eu_all * swe_2022;
 let swe_growth = swe_2022 / swe_2008;
 let swe_growth_all = swe_2022 - swe_2008
 console.log ("Einwohnerzahl Schwedens im Jahr 2022 in Millionen" + " " + swe_2022 + " " + "Mio. Relativ zur Gesamtzahl der Einwohner der EU" + " " + swe_perc_to_eu.toFixed(2) + "% Wachstumsrate seit 2008" + " " + swe_growth.toFixed(2) + " " + "Wachstumsrate zwischen den Jahren 2008 und 2022 gesamt" + " " + swe_growth_all.toFixed(2) + " " + "Mio")
