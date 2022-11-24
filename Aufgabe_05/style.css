@@ -68,7 +68,7 @@ ul {
   /*Link-Farbe*/
   li a:hover {
     padding: 10px 20px 10px;
-    background: linear-gradient(rgb(44, 184, 98),rgb(14, 219, 93), rgb(95, 255, 55), rgb(147, 244, 43));;
+    background: linear-gradient(rgb(44, 184, 98),rgb(14, 219, 93), rgb(95, 255, 55), rgb(147, 244, 43));
     color: #000000;
   }
 
