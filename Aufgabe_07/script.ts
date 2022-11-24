@@ -9,10 +9,11 @@ console.log("Klick")
 document.getElementById("headline1").innerHTML = "Einwohnerzahl von "+Land+"";
 document.getElementById("text1").innerHTML = "Gesamtzahl Einwohner*innen in "+Land+" im Jahr 2022"
 
-document.getElementById("number1").innerHTML = peopleincountry + "Mio";
+document.getElementById("number1").innerHTML = peopleincountry + " " +"Mio";
 document.getElementById("number2").innerHTML = peopleinpercent.toFixed(2) + "%";
 document.getElementById("number3").innerHTML = peoplegrowth.toFixed(2) + "%";
-document.getElementById("number4").innerHTML = peoplegrowthfull.toFixed(2) + "Mio";
+document.getElementById("number4").innerHTML = peoplegrowthfull.toFixed(2) + " " + "Mio";
+document.querySelector(".chart").setAttribute('style','height:'+ (peopleinpercent).toString()+'%;')
 
 }
 
