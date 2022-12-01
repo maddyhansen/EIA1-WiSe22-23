@@ -1,0 +1,65 @@
+.button{
+    width: 150px;
+    height: 150px;
+}
+
+/*TOP-BUTTONS*/
+
+#button1{
+    background-color: #1900ff;
+}
+
+#button2{
+    background-color: #1900ff;
+}
+
+#button3{
+    background-color: #1900ff;
+}
+
+#top{
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+/*MIDDLE-BUTTONS*/
+
+#middle{
+    margin-left: 30%;
+}
+
+#button4{
+    background-color: #e600ff;
+}
+
+#button5{
+    background-color: #e600ff;
+}
+
+#button6{
+    background-color: #e600ff;
+}
+
+#button7{
+    background-color: #e600ff;
+}
+
+/*DOWN-BUTTONS*/
+
+#down{
+    margin-left: 30%;
+
+}
+
+#button8{
+    background-color: #ff9500;
+}
+
+#button9{
+    background-color: #ff9500;
+}
+
+.play{
+    margin-left: 45%;
+}
+
