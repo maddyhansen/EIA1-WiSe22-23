@@ -56,16 +56,15 @@ clearInterval(myInterval)
 
 
 /*Random Generator für das Mikrofon*/
+function mix () {
+    audios1 = [];
+    while(audios1.length < 3){
+        var r = Math.floor(Math.random() * 9);
+        audios1.push(audios[r]);
+    }
+}
 
+document.querySelector("#mix").addEventListener('click',  mix)
 
-document.querySelector("#mix").addEventListener('click', function () {
-
-    
-        audios1 = [];
-        while(audios1.length < 3){
-            var r = Math.floor(Math.random() * 10);
-            audios1.push(audios[r]);
-        }
-        
-})}
+}
 
