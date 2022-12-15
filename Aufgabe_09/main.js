@@ -48,12 +48,13 @@ var Aufgabe09;
         clearInterval(myInterval);
     });
     /*Random Generator für das Mikrofon*/
-    document.querySelector("#mix").addEventListener('click', function () {
+    function mix() {
         audios1 = [];
         while (audios1.length < 3) {
-            var r = Math.floor(Math.random() * 10);
+            var r = Math.floor(Math.random() * 9);
             audios1.push(audios[r]);
         }
-    });
+    }
+    document.querySelector("#mix").addEventListener('click', mix);
 })(Aufgabe09 || (Aufgabe09 = {}));
 //# sourceMappingURL=main.js.map

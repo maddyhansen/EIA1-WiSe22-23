@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="./main.js"defer ></script>
+</head>
+<body>
+    <h1>To Do App</h1>
+    <form id="new-task">
+    <input id="new-task-input" type="text" placeholder="Add Another Task">
+    <input type="submit" value="Add Task" id="new-task-submit"/>
+</form>
+</body>
+<main>
+    <section class="task-list">
+        <h2>Tasks</h2>
+        
+       <div id="tasks">
+            <div class="task">
+                <div class="content">
+                    <input type="text" class="text" value="my shiny taks" readonly/>
+                </div>
+                <div class="actions">
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</html>
