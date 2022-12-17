@@ -1,11 +1,37 @@
+/*Inside body: Font, background, width and fontcolor*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    background-color: #515151;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./Redraw_After_6_Years.jpg);
+    background-size: cover;
     margin: auto;
     max-width: 600px;
+    color: white;
 }
 
+/*position centered (idk why is does not work with center -.-)*/
+#headerpart{
+    position: relative;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+/*position of the headlines and fontsize)*/
+#head1{
+    font-size: 40px;
+    margin-left: 8%;
+}
+
+#head2{
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right:10px;
+}
+
+h2 {
+    font-size: 20px;
+
+}
+
+/*design of the task field and also the button*/
 input {
     background-color: white;
     border: 2px;
@@ -15,19 +41,29 @@ input {
     display: inline;
 }
 
+/*design for the task field after you added it to the list, also delete button design*/
 main {
     flex: 1 1 0%;
     margin: auto;
     max-width: 600px;
     width: 100%;
 }
+.taskAlign {
+    display: flex;
+    flex-direction: row;
+}
 
 .task-list {
     padding: 15px;
 }
+#tasks {
+    display: flex;
+    flex-direction: column;
+}
 
 #tasks .task {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 }
@@ -52,7 +88,7 @@ main {
 .delete {
     border: none;
     background-color: transparent;
-    color: blueviolet;
+    color: rgb(132, 0, 255);
 }
 
 .task {
