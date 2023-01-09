@@ -1,4 +1,5 @@
 namespace Aufgabe11 {
+    declare var Artyom: any;
 
     /*Blueprint*/
     interface TODO {
@@ -15,9 +16,13 @@ namespace Aufgabe11 {
     var inputDOMElement: HTMLInputElement;
     var addButtonDOMElement: HTMLElement;
     var todosDOMElement: HTMLElement;
-    var counterDOMElement: HTMLElement;
+    var counterDOMElement: HTMLParagraphElement;
     var counterdoneDOMElement: HTMLElement;
     var counteropenDOMElement: HTMLElement;
+
+    var counterTotal: number = 0;
+    var counterClosed: number = 0;
+    var counterOpen: number = 0;
 
 
     window.addEventListener("load", function (): void {
@@ -26,10 +31,9 @@ namespace Aufgabe11 {
         inputDOMElement = document.querySelector("#inputTodo");
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
-        counterDOMElement = document.querySelector("#counter");
+        counterDOMElement = <HTMLParagraphElement>document.getElementById("counter");
         counteropenDOMElement = document.querySelector("#counteropen");
         counterdoneDOMElement = document.querySelector("#counterdone");
-
 
         addButtonDOMElement.addEventListener("click", addTodo);
 
@@ -43,7 +47,7 @@ namespace Aufgabe11 {
             let todo: HTMLElement = document.createElement("div");
             todo.classList.add("todo");
 
-            todo.innerHTML = "<span class='check "+ intertodo[index].check + "'><i class='fas fa-check'></i></span>"
+            todo.innerHTML = "<span class='check " + intertodo[index].check + "'><i class='fas fa-check'></i></span>"
                 + intertodo[index].task +
                 "<span class='trash fas fa-trash-alt'></span>";
 
@@ -55,34 +59,50 @@ namespace Aufgabe11 {
             });
             todosDOMElement.appendChild(todo);
 
-            
+
         }
 
 
     }
 
-    function updateCounter(index: number): void {
-        counterDOMElement.innerHTML = intertodo.length + " in total"; 
-        let i=0
-        if (intertodo[index].check == true) counterdoneDOMElement.innerHTML = i++ + "done";
-        if (intertodo[index].check == false) counteropenDOMElement.innerHTML = i++ + "open";
+    function updateCounter(index?: number): void {           //? macht optional ob ich Zahl beim Aufruf des Counters eintrage. bsp: updatecounter()
+        console.log(intertodo);
+        if (index || index == 0) {                           // Bedeutet "oder": wenn index ODER index == 0 ist, dann erfüllt er die if Bedingung
+            if (intertodo[index].check == true) counterClosed--;
+            if (intertodo[index].check == false) counterOpen--;
+        }
+        counterDOMElement.innerHTML = counterTotal + " in total";
+        counterdoneDOMElement.innerHTML = counterClosed + " open";
+        counteropenDOMElement.innerHTML = counterOpen + " done";
 
-}
+
+
+
+    }
 
     function addTodo(): void {
         if (inputDOMElement.value != "") {
-            intertodo.unshift({ task: inputDOMElement.value, check: false})
+            intertodo.unshift({ task: inputDOMElement.value, check: false })
             inputDOMElement.value = "";
             drawListToDOM();
+            counterTotal++;
+            counterOpen++;
+            updateCounter()
         }
     }
     function toggleCheckState(index: number): void {
         intertodo[index].check = !intertodo[index].check;
         drawListToDOM();
-        updateCounter(index);
+        counterClosed++;
+        counterOpen--;
+        updateCounter();
     }
     function deleteTodo(index: number): void {
+        counterTotal--;
+        console.log(index);
+        updateCounter(index)
         intertodo.splice(index, 1);
         drawListToDOM();
+
     }
 }
